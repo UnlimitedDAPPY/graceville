@@ -78,7 +78,7 @@ const Contact = () => {
               <span className="text-yellow-500 text-xl">📞</span>
               <h3 className="text-lg font-semibold">Contact Number</h3>
             </div>
-            <p className="mt-2 text-blue-500 font-medium">+ 1235 2355 98</p>
+            <p className="mt-2 text-purple-900 font-medium">+2348035457934</p>
           </div>
 
           {/* Email */}
@@ -87,7 +87,7 @@ const Contact = () => {
               <span className="text-yellow-500 text-xl">✉️</span>
               <h3 className="text-lg font-semibold">Email Address</h3>
             </div>
-            <p className="mt-2 text-blue-500 font-medium">ourgraceville@gmail.com</p>
+            <p className="mt-2 text-purple-900 font-medium">ourgraceville@gmail.com</p>
           </div>
 
           {/* Website */}
@@ -96,7 +96,7 @@ const Contact = () => {
               <span className="text-yellow-500 text-xl">🌐</span>
               <h3 className="text-lg font-semibold">Website</h3>
             </div>
-            <p className="mt-2 text-blue-500 font-medium">rccggraceville.org</p>
+            <p className="mt-2 text-purple-900 font-medium">rccggraceville.org</p>
           </div>
         </div>
 
@@ -125,7 +125,7 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
-              className="bg-blue-900 text-white font-medium px-6 py-3 rounded-full shadow-md hover:bg-blue-500 transition"
+              className="bg-purple-900 text-white font-medium px-6 py-3 rounded-full shadow-md hover:bg-red-600 transition"
             >
               Send Message
             </button>
