@@ -120,7 +120,7 @@ const Contact = () => {
             />
             <textarea
               placeholder="Message"
-              rows="5"
+              rows={5}
               className="w-full border rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
             ></textarea>
             <button

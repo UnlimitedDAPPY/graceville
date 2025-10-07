@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Calendar, Users, Heart,  HeartHandshake, Play} from "lucide-react";
 // import { time } from "framer-motion";
 // import { Prayer, Church } from "lucide-react";

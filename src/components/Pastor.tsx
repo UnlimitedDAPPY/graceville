@@ -1,5 +1,4 @@
-import { section } from 'framer-motion/client'
-import React from 'react'
+
 import { Facebook, Instagram, Youtube } from 'lucide-react'
 
 function Pastor() {
