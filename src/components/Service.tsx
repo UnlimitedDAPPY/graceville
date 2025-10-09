@@ -19,7 +19,7 @@ const Service = () => {
           </h2>
           <div className="w-20 h-1 bg-red-500 mx-auto mt-3 rounded"></div>
 
-          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-4 text-white max-w-2xl mx-auto">
             At RCCG Graceville, we are a family of believers passionate about
             worship, the Word, and winning souls for Christ. Each of our
             services is designed to strengthen your faith, build genuine
