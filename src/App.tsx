@@ -1,5 +1,5 @@
 import About from "./components/About";
-import { Headers } from "./components/Headers";
+import Headers from "./components/Headers";
 import Hero from "./components/Hero";
 import Contact from "./components/Contact";
 import Sevices from "./components/Service";
@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 
 function App() {
-  
+
 
   return (
     <div className="">

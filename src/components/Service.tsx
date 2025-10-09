@@ -143,7 +143,7 @@ const Service = () => {
                 <Users className="w-8 h-8 text-red-500" />
               </div>
               <h3 className="text-xl font-bold text-center text-red-600 mb-4 uppercase">
-                Graceville Hangout
+                Midweek Service
               </h3>
               <p className="text-center font-medium leading-relaxed">
                 A time to connect, share, and grow together

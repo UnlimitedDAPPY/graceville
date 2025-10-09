@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Menu, X, Phone, MapPin, Clock } from "lucide-react";
 import GVLogo from "../assets/gv-logo.png";
 
-export const Headers: React.FC = () => {
+const Headers = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // ✅ Navigation links (avoids repetition)
@@ -161,3 +161,5 @@ export const Headers: React.FC = () => {
     </>
   );
 };
+
+export default Headers
