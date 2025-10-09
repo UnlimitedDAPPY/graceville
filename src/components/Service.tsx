@@ -3,10 +3,10 @@ import { Video, HandHelping, Church, Users } from "lucide-react";
 
 const Service = () => {
   return (
-    <section className="py-20 bg-gray-50" id="services">
+    <section className="py-20 bg-purple-900" id="services">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-center mb-8 text-center">
-          <span className="flex items-center text-gray-500 text-lg uppercase tracking-[0.3em] w-full max-w-lg">
+          <span className="flex items-center text-white text-lg uppercase tracking-[0.3em] w-full max-w-lg">
             <span className="flex-1 h-px bg-gray-400 mr-4"></span>
             Service
             <span className="flex-1 h-px bg-gray-400 ml-4"></span>
@@ -14,7 +14,7 @@ const Service = () => {
         </div>
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-wide">
+          <h2 className="text-3xl md:text-4xl font-bold text-white tracking-wide">
             <span className="text-red-600">Graceville</span> Church Services
           </h2>
           <div className="w-20 h-1 bg-red-500 mx-auto mt-3 rounded"></div>

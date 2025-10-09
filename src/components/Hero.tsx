@@ -38,6 +38,7 @@ const bannerSlides = [
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  
 
   // Auto-slide every 5 seconds
   useEffect(() => {
@@ -48,8 +49,9 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="relative w-full h-screen overflow-hidden">
-      {/* Banner Images */}
+    <section id="home" 
+    className="relative w-full h-screen overflow-hidden">
+     
       <AnimatePresence mode="wait">
         {bannerSlides.map((slide, index) =>
           index === currentIndex ? (
@@ -69,13 +71,13 @@ const Hero = () => {
       </AnimatePresence>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-black/50" />
 
       {/* Content */}
-      <div className="relative container mx-auto px-6 lg:px-12 h-full flex flex-col justify-center text-center">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-12 h-full flex flex-col justify-center text-center">
         <motion.h1
           key={bannerSlides[currentIndex].title}
-          className="uppercase text-[34px] lg:text-5xl font-bold tracking-[10px] text-white mb-4"
+          className="uppercase text-2xl sm:text-4xl md:text-5xl font-bold tracking-[2px] sm:tracking-[6px] text-white mb-3 sm:mb-4 leading-tight"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}
@@ -86,7 +88,7 @@ const Hero = () => {
 
         <motion.p
           key={bannerSlides[currentIndex].description}
-          className="text-white/90 text-lg lg:text-xl max-w-2xl mx-auto mb-8 px-2 leading-relaxed"
+          className="text-white/90 text-sm sm:text-base md:text-lg max-w-md sm:max-w-2xl mx-auto mb-6 sm:mb-8 px-2 leading-relaxed"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 10 }}
@@ -95,14 +97,13 @@ const Hero = () => {
           {bannerSlides[currentIndex].description}
         </motion.p>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
           <a
             href="https://www.youtube.com/@gracevillerccg693"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-purple-900 text-white px-8 py-4 rounded-lg hover:bg-red-600 transition-all duration-300 font-semibold text-lg flex items-center justify-center gap-2 hover:scale-105">
+            <button className="bg-purple-900 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-red-600 transition-all duration-300 font-semibold text-base sm:text-lg flex items-center justify-center gap-2 hover:scale-105">
               <Play className="w-5 h-5" />
               Watch Live Service
             </button>
@@ -113,21 +114,26 @@ const Hero = () => {
         </div>
 
         {/* Quick Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+        <div className="hidden sm:grid grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mt-10 sm:mt-12 px-4">
           {[
             { icon: Users, value: "500+", label: "Members" },
             { icon: Calendar, value: "15+", label: "Years Serving" },
             { icon: Heart, value: "10+", label: "Ministries" },
           ].map(({ icon: Icon, value, label }) => (
             <div key={label} className="text-center">
-              <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6">
+              <div className="bg-white/20 backdrop-blur-sm rounded-lg p-5 sm:p-6">
                 <Icon className="w-8 h-8 text-purple-900 mx-auto mb-2" />
                 <div className="text-2xl font-bold text-white">{value}</div>
-                <div className="text-blue-100">{label}</div>
+                <div className="text-blue-100 text-sm sm:text-base">{label}</div>
               </div>
             </div>
           ))}
         </div>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <button className="bg-red-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-red-600 transition-all duration-300 font-semibold text-base sm:text-lg items-center justify-center gap-2 hover:scale-105 mt-6 sm:mt-8 blinking-button">
+            Register Your Business
+          </button>
+        </a>
       </div>
     </section>
   );

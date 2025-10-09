@@ -26,7 +26,7 @@ const About = () => {
 
         {/* Right Column: Background */}
         <div className="w-full md:h-auto bg-blue-100 flex flex-col items-start justify-center text-left py-12 px-6 md:px-16">
-           <h3 className="uppercase text-2xl sm:text-3xl md:text-[34px] text-blue-900 leading-tight font-bold tracking-[10px] sm:tracking-[10px] font-lora">
+           <h3 className="uppercase text-2xl sm:text-3xl md:text-[34px] text-purple-900 leading-tight font-bold tracking-[10px] sm:tracking-[10px] font-lora">
             Welcome to RCCG <span className="text-red-500">Graceville</span>
           </h3>
          <p className="text-sm md:text-base text-gray-600 font-lora max-w-3xl leading-relaxed mt-4 hover:text-gray-800 transition">
@@ -149,92 +149,8 @@ const About = () => {
 
 
 
-    // <div className="relative" id="about">
-    //   <div className="relative grid grid-cols-1 md:grid-cols-2 h-screen">
-  {/* Left Column: Image */}
-  // <div className="w-full h-64 md:h-auto">
-  //   <img
-  //     src="/images/about.webp"
-  //     alt="Church community"
-  //     className="w-full h-full object-cover"
-  //   />
-  // </div>
-
-  {/* Right Column: Image or background color */}
-  // <div className="w-full  md:h-auto bg-white-900/70">
-    {/* Can add another image here if desired */}
-  // </div>
-
-  {/* Overlay Text spanning both columns */}
-//   <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
-//     <h1 className="uppercase text-[34px] text-black leading-[1.2] font-bold tracking-[10px] font-lora">
-//       Welcome to RCCG Graceville
-//     </h1>
-//     <p className="text-lg md:text-2xl text-gray-500 font-lora
-//     max-w-3xl leading-relaxed">
-//       A place where faith meets community. We fortify by grace, shielded by faith, 
-//       and clothed in love. (Ephesians 6:16; Colossians 3:14)
-//     </p>
-
-//     <div className="flex flex-col sm:flex-row gap-4 mt-6">
-//       <a href="https://www.youtube.com/@gracevillerccg693" target="_blank" rel="noopener noreferrer">
-//         <button className="bg-amber-500 text-white px-6 py-3 rounded-lg hover:bg-amber-600 font-semibold transition">
-//           Watch Live Service
-//         </button>
-//       </a>
-//       <button className="border-2 border-white bg-gray-500 text-black px-6 py-3 rounded-lg hover:bg-black hover:text-white transition font-semibold">
-//         Plan Your Visit
-//       </button>
-//     </div>
-//   </div>
-//    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 max-w-6xl mx-auto h-screen">
-//           {[
-//             { icon: Users, value: "500+", label: "Members" },
-//             { icon: Calendar, value: "15+", label: "Years Serving" },
-//             { icon: Heart, value: "10+", label: "Ministries" },
-//           ].map(({ icon: Icon, value, label }) => (
-//             <div key={label} className="text-center">
-//               <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6">
-//                 <Icon className="w-8 h-8 text-amber-400 mx-auto mb-2" />
-//                 <div className="text-2xl font-bold text-white">{value}</div>
-//                 <div className="text-blue-100">{label}</div>
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-
-// </div>
-
-//     </div>
-//   )
-// }
+   
 
 export default About;
 
-  {/* <div className="grid max-w-6xl mx-auto grid-cols-1 md:grid-cols-3 gap-6">
-    
-      <div>
-        <p>memeber</p>
-      </div>
-      <div>
-        <p>memeber</p>
-      </div>
-      <div>
-        <p>memeber</p>
-      </div>
   
-  </div> */}
-
-
-{/* <div className="flex flex-col md:flex-row">
-        <p>hello to chjrch</p>
-  <div className="relative w-full h64 md:h-auto md:w-1/2">
-    <img
-    src="/images/banner1.jpeg" alt="Church" className="w-full h-auto " 
-    />
-    </div>
-  
-  <div className="md:w-1/2 bg-green-500 p-4 text-white">
-    Column 2
-  </div>
-</div> */}

@@ -13,15 +13,26 @@ export const Headers: React.FC = () => {
     { name: "Events", href: "#events" },
     { name: "Services", href: "#services" },
      { name: "Pastor", href: "#pastors" },
+     { name: "Tribes", href: "#tribes" },
     { name: "Contact", href: "#contact" },
   ];
+
+    const handleLinkClick = (href: string) => {
+    setIsMenuOpen(false);
+
+    // Smooth scroll to anchor section if it's on the same page
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <>
     <section className="fixed top-0 left-0 right-0 z-50">
       {/* 🔹 Top Info Bar */}
-      <div className="bg-blue-900 text-white py-2 px-4">
-        <div className="container mx-auto flex flex-wrap justify-center items-center text-sm gap-6">
+      <div className="bg-purple-900 text-white py-2 px-4">
+        <div className="container mx-auto flex flex-wrap justify-center items-center text-sm gap-4">
           <div className="flex items-center gap-2">
             <Clock className="w-4 h-4" />
             <span>Sunday Service: 9:00 AM & 11:30 AM</span>
@@ -114,6 +125,10 @@ export const Headers: React.FC = () => {
                   <a
                     key={link.name}
                     href={link.href}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleLinkClick(link.href);
+                    }}
                     className="text-gray-700 hover:text-blue-600 font-medium"
                   >
                     {link.name}
@@ -124,7 +139,7 @@ export const Headers: React.FC = () => {
                     href="https://www.youtube.com/@gracevillerccg693"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="border-2 border-blue-600 text-blue-600 px-3 py-1.5 rounded-lg hover:bg-blue-600 hover:text-white transition-colors font-medium text-sm text-center"
+                    className="border-2 border-purple-900 text-purple-900 px-3 py-1.5 rounded-lg hover:bg-blue-600 hover:text-white transition-colors font-medium text-sm text-center"
                   >
                     Watch Live
                   </a>
@@ -132,7 +147,7 @@ export const Headers: React.FC = () => {
                     href="https://your-giving-link.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-amber-500 text-white px-4 py-2 rounded-lg hover:bg-amber-600 transition-colors font-medium text-center"
+                    className="bg-purple-900 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-colors font-medium text-center"
                   >
                     Give Online
                   </a>

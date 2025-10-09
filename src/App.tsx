@@ -4,6 +4,8 @@ import Hero from "./components/Hero";
 import Contact from "./components/Contact";
 import Sevices from "./components/Service";
 import Pastor from "./components/Pastor";
+import Tribes from "./components/Tribes";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -17,7 +19,9 @@ function App() {
         <About />
         <Sevices />
         <Pastor />
+          <Tribes />
         <Contact />
+        <Footer />
       </div>
     
   );
