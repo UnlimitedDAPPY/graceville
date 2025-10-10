@@ -1,21 +1,13 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Menu, X, Phone, MapPin, Clock } from "lucide-react";
 import GVLogo from "../assets/gv-logo.png";
+import { HeaderLinks } from "./NavLink";
+
 
 const Headers = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // ✅ Navigation links (avoids repetition)
-  const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Ministries", href: "#ministries" },
-    { name: "Events", href: "#events" },
-    { name: "Services", href: "#services" },
-     { name: "Pastor", href: "#pastors" },
-     { name: "Tribes", href: "#tribes" },
-    { name: "Contact", href: "#contact" },
-  ];
 
     const handleLinkClick = (href: string) => {
     setIsMenuOpen(false);
@@ -68,7 +60,7 @@ const Headers = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex space-x-8">
-              {navLinks.map((link) => (
+              {HeaderLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
@@ -121,7 +113,7 @@ const Headers = () => {
           {isMenuOpen && (
             <div className="lg:hidden py-4 border-t">
               <div className="flex flex-col space-y-4">
-                {navLinks.map((link) => (
+                {HeaderLinks.map((link) => (
                   <a
                     key={link.name}
                     href={link.href}

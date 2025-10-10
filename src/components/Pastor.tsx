@@ -41,7 +41,7 @@ function Pastor() {
     <section className="py-20 bg-white" id="pastors">
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
-        <div className="flex items-center justify-center mb-8 text-center">
+        <div className="flex items-center justify-center mb-8 text-center text-white">
           <span className="flex items-center text-gray-500 text-lg uppercase tracking-[0.3em] w-full max-w-lg">
             <span className="flex-1 h-px bg-gray-400 mr-4"></span>
             Pastors
